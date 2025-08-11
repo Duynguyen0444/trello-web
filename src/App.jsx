@@ -1,16 +1,8 @@
-import Button from '@mui/material/Button'
-import { AccessAlarm, ThreeDRotation } from '@mui/icons-material'
+import Board from './pages/Boards/_id'
 
 function App() {
   return (
-    <>
-      <Button variant='text'>Text</Button>
-      <Button variant='contained'>Contained</Button>
-      <Button variant='outlined'>Outlined</Button>
-      <br />
-      <AccessAlarm />
-      <ThreeDRotation />
-    </>
+    <Board />
   )
 }
 

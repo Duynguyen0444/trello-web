@@ -1,3 +1,5 @@
+// Updated by trungquandev.com's author on May 13 2023
+// Sample Eslint config for React project
 module.exports = {
   env: { browser: true, es2020: true, node: true },
   extends: [
@@ -22,22 +24,16 @@ module.exports = {
     'react/display-name': 0,
 
     // MUI
-    // 'no-restricted-imports': [
-    //   'error', {
-    //     'pattern': ['@mui/*/*/*']
-    //   }
-    // ],
-    // .eslintrc
+    'no-restricted-imports': [
+      'error',
+      {
+        'patterns': ['@mui/*/*/*']
+      }
+    ],
 
-    'rules': {
-      'no-restricted-imports': [
-        'error',
-        {
-          'patterns': ['@mui/*/*/*']
-        }
-      ]
-    },
+    // Common
     'no-console': 1,
+    'no-extra-boolean-cast': 0,
     'no-lonely-if': 1,
     'no-unused-vars': 1,
     'no-trailing-spaces': 1,
